@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const API_URL = import.meta.env.MODE === "production" ? "https://backend-bj7u.onrender.com/api/auth" : "/api/auth";
+const API_URL = import.meta.env.MODE === "development" ? "https://backend-bj7u.onrender.com/api/auth" : "/api/auth";
 
 axios.defaults.withCredentials = true;
 
